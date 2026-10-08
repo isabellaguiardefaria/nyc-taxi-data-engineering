@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_yellow_taxi
+    columns:
+      - name: VendorID
+        tests:
+          - not_null
+
+      - name: trip_distance
+        tests:
+          - not_null
+
+      - name: fare_amount
+        tests:
+          - not_null

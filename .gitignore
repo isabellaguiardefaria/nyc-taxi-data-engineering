@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Data generated locally
+data/warehouse/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# dbt
+dbt/*/target/
+dbt/logs/
+dbt/*/logs/
+dbt/*/.user.yml
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
