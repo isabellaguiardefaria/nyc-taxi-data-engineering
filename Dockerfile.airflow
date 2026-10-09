@@ -1,0 +1,11 @@
+FROM apache/airflow:3.3.2-python3.12
+
+USER airflow
+
+RUN python -m venv /home/airflow/pipeline-venv && \
+    /home/airflow/pipeline-venv/bin/pip install --no-cache-dir \
+    'dvc[s3]==3.67.1' \
+    'dbt-core==1.12.5' \
+    'dbt-duckdb==1.11.0'
+
+ENV PATH="/home/airflow/pipeline-venv/bin:${PATH}"

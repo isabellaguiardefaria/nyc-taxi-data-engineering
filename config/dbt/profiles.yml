@@ -1,0 +1,9 @@
+nyc_taxi:
+  target: docker
+  outputs:
+    docker:
+      type: duckdb
+      path: /opt/airflow/project/data/warehouse/nyc_taxi.duckdb
+      threads: 2
+      extensions:
+        - parquet

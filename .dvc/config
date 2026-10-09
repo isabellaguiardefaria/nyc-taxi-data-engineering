@@ -3,3 +3,6 @@
 ['remote "minio"']
     url = s3://dvc-storage
     endpointurl = http://localhost:9000
+['remote "minio_docker"']
+    url = s3://dvc-storage
+    endpointurl = http://minio:9000

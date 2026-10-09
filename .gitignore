@@ -21,3 +21,15 @@ dbt/*/.user.yml
 
 # macOS
 .DS_Store
+# Airflow logs
+logs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# dbt generated files
+dbt/nyc_taxi/dbt_packages/
+
+# Local dbt configuration
+config/dbt/.user.yml

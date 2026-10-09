@@ -11,5 +11,5 @@ SELECT
     tip_amount,
     total_amount
 FROM read_parquet(
-    '/Users/isabellaguimaraes/projects/nyc-taxi-data-engineering/data/raw/yellow_tripdata_2025-01.parquet'
+    '/opt/airflow/project/data/raw/yellow_tripdata_2025-01.parquet'
 )
